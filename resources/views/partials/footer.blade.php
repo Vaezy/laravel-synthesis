@@ -1,3 +1,3 @@
-<footer style="text-align: center;">
+<footer>
     <p>2025 - Refuge Connect</p>
 </footer>

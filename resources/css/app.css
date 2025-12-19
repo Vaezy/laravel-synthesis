@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -6,6 +6,84 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #f5f8fa;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+a {
+    color: #52c9ff;
+    text-decoration: none;
+}
+main {
+    padding: 20px 0;
+}
+
+.animal-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.animal-content {
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.animal-content .animal-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.animal-content .animal-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.animal-content .animal-name {
+    margin: 0px;
+    font-size: 24px;
+}
+
+.animal-content .animal-text {
+    margin: 0px;
+}
+
+.animal-content .animal-button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: inherit;
+}
+
+footer {
+    text-align: center;
 }
