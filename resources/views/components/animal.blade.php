@@ -1,7 +1,7 @@
 <div class="animal-content">
     <a href="{{ route('animals.show', $animal->id) }}" class="animal-link">
         <img src="{{ asset('images/' . $animal->photo) }}" alt="{{ $animal->name }}" class="animal-img" />
-        <h3 class="animal-name">{{ $animal->name }}</h3>
+        <h1 class="animal-name">{{ $animal->name }}</h1>
         <p class="animal-text">{{ $animal->species }}</p>
         <p class="animal-text"">{{ $animal->age }} ans</p>
         <p class="animal-text"">{{ Str::limit($animal->description, 100, '...') }}</p>
