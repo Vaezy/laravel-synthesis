@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="animal-detail-container">
-    <h2 class="animal-detail-title">{{ $animal->name }}</h2>
+    <h1 class="animal-detail-title">{{ $animal->name }}</h1>
     <div class="animal-detail-content">
         <div class="animal-detail-img">
             <img src="{{ asset('images/' . $animal->photo) }}" alt="{{ $animal->name }}">
