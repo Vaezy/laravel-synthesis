@@ -36,12 +36,8 @@ class AnimalController extends Controller
 
     public function delete($id)
     {
-        $animal = Animal::find($id);
-        if (!$animal) {
-            return redirect()->route('home');
-        }
+        $animal = Animal::findOrFail($id);
         $animal->delete();
         return redirect()->route('home');
     }
 }
-
